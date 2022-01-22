@@ -155,11 +155,11 @@ Complex & Complex :: operator = (const double & aRval)          //Ssylaetcya na 
     return * this;                                              //Vozvrat po znacheniu
 }
 
-istream & operator >>(istream &stream, Complex&a)
+istream & operator >> (istream & stream , Complex & a)          //Izvlechenie deystvitelnoy i mnimoy chasti
 {
     char tmp[256];
-    stream >> a.Re >>a.Im >> tmp;
-    return stream;
+    stream >> a.Re >> a.Im >> tmp;
+    return stream;                                              //Izvlechenie
 }
 
 ostream& operator<<(ostream&stream,Complex&a)
