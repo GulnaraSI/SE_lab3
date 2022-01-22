@@ -148,11 +148,11 @@ Complex & Complex :: operator = (const Complex & aRval)         //Ssylaetcya na 
     return * this;                                              //Vozvrat po znacheniu
 }
 
-Complex& Complex::operator= (const double& aRval)
+Complex & Complex :: operator = (const double & aRval)          //Ssylaetcya na rezultat ravenstva deystvitelnogo chisla
 {
     Re = aRval;
     Im = 0.0;
-    return *this;
+    return * this;                                              //Vozvrat po znacheniu
 }
 
 istream & operator >>(istream &stream, Complex&a)
