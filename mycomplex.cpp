@@ -107,12 +107,12 @@ Complex & Complex :: operator -= (const Complex & aRval)        //Ssylaetcya na 
     return * this;                                              //Vozvrat po znacheniu
 }
 
-Complex&Complex::operator*=(const Complex&aRval)
+Complex & Complex :: operator *= (const Complex & aRval)        //Ssylaetcya na rezultat umnozheniya kompleksnogo chisla
 {
     double tmpRe = Re;
     Re = Re * aRval.Re - Im * aRval.Im;
     Im = Im * aRval.Re + tmpRe * aRval.Im;
-    return *this;
+    return * this;                                              //Vozvrat po znacheniu
 }
 
 Complex& Complex::operator+= (const double& aRval)
