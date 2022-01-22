@@ -195,7 +195,3 @@ Complex operator * (const double & aLval , const Complex & a)           //Vozvra
     return r;                                                           //Rezultat
 }
 
-int main()//Funkciya Main() dobavlena dlya kompilyacii
-{
-return 0;
-}
