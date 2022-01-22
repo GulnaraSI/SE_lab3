@@ -19,8 +19,8 @@ Complex ::  Complex(const Complex& aRval)       //Konstruktor klassa
 
 Complex::~Complex()                             //Destruktor klassa
 {
-    Re =0.0;
-    Im= 0.0;
+    Re = 0.0;
+    Im = 0.0;
 }
 
 void     Complex::  Set(  double aRe,double aIm)    //Ustanovka deystvitelnoy i mnimoy chacti
@@ -29,9 +29,9 @@ void     Complex::  Set(  double aRe,double aIm)    //Ustanovka deystvitelnoy i 
     Im = aIm;
 }
 
-Complex::operator double()
+Complex::operator double()                          //Vozvraschaet modul' kompleksnogo chisla
 {
-    return abs();
+    return abs();                                   //Modul' koplesnogo chisla
 }
 
 double Complex::abs()
