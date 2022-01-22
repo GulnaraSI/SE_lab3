@@ -141,11 +141,11 @@ Complex & Complex :: operator /= (const double & aRval)         //Ssylaetcya na 
     return * this;                                              //Vozvrat po znacheniu
 }
 
-Complex& Complex::operator= (const Complex& aRval)
+Complex & Complex :: operator = (const Complex & aRval)         //Ssylaetcya na rezultat ravenstva kompleksnogo chisla
 {
-    Re=aRval.Re;
-    Im=aRval.Im;
-    return *this;
+    Re = aRval.Re;
+    Im = aRval.Im;
+    return * this;                                              //Vozvrat po znacheniu
 }
 
 Complex& Complex::operator= (const double& aRval)
