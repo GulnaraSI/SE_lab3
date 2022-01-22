@@ -1,6 +1,6 @@
 /*Fail s opisaniem metodov klassa Complex*/
-#include<iostream>
-#include   <cmath>
+#include <iostream>
+#include <cmath>
 #include "mycomplex.h"
 
 using namespace std;
@@ -17,7 +17,7 @@ Complex ::  Complex(const Complex& aRval)       //Konstruktor klassa
     Im = aRval.Im;                              //aRval - kompleksnoe chislo , aRval.Im - mnimaya chact'
 }
 
-Complex::~Complex()
+Complex::~Complex()                             //Destruktor klassa
 {
     Re =0.0;
     Im= 0.0;
