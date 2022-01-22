@@ -162,13 +162,13 @@ istream & operator >> (istream & stream , Complex & a)          //Izvlechenie de
     return stream;                                              //Izvlechenie
 }
 
-ostream& operator<<(ostream&stream,Complex&a)
+ostream & operator << (ostream & stream , Complex & a)          //Vstavlyaem deystvitelnuu i mnimuu chasti
 {
     stream << a.Re;
-    if( !(a.Im < 0) )
+    if( ! (a.Im < 0) )
         stream << '+';
     stream << a.Im << 'i';
-    return stream;
+    return stream;                                              //Vstavka
 }
 
 Complex operator+ (const double& aLval, const Complex& aRval)
