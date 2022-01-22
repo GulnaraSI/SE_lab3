@@ -171,12 +171,12 @@ ostream & operator << (ostream & stream , Complex & a)          //Vstavlyaem dey
     return stream;                                              //Vstavka
 }
 
-Complex operator+ (const double& aLval, const Complex& aRval)
+Complex operator + (const double & aLval , const Complex & aRval)       //Vozvraschaet rezultat slozheniya deystvitelnogo i komplesnogo chisla
 {
     Complex Result;
-    Result.Re= aLval+aRval.Re;
-    Result. Im=  aRval.Im;
-    return Result;
+    Result.Re = aLval + aRval.Re;                                       //aLval - deystvitelnoe chislo
+    Result.Im = aRval.Im;
+    return Result;                                                      //Rezultat
 }
 
 Complex operator-(const double &aLval, const Complex&aRval)
