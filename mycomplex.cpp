@@ -63,19 +63,19 @@ Complex Complex :: operator + (const double & aval)             //Vozvraschaet r
     return result;                                              //Rezultat
 }
 
-Complex Complex :: operator - (const  double & aRval)           //ozvraschaet rezultat vychitaniya kompleksnogo chisla
+Complex Complex :: operator - (const  double & aRval)           //Vozvraschaet rezultat vychitaniya deystvitelnogo chisla
 {
     Complex Result(* this);
     Result.Re = Re - aRval;
     return Result;                                              //Rezultat
 }
 
-Complex Complex  ::operator* ( const Complex  & aRval )
+Complex Complex :: operator * (const Complex & aRval)           //Vozvraschaet rezultat umnozheniya kompleksnogo chisla
 {
     Complex Result;
-    Result.Re=Re*aRval.Re-Im*aRval.Im;
-    Result.Im =Re *aRval.Im+Im*aRval.Re;
-    return Result;
+    Result.Re = Re * aRval.Re - Im * aRval.Im;
+    Result.Im = Re * aRval.Im + Im * aRval.Re;
+    return Result;                                              //Rezultat
 }
 
 Complex Complex::operator* (const double& aRval)
