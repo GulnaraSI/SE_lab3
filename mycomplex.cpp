@@ -1,3 +1,4 @@
+/*Fail s opisaniem metodov klassa Complex*/
 #include<iostream>
 #include   <cmath>
 #include "mycomplex.h"
@@ -114,8 +115,8 @@ Complex& Complex::operator+= (const double& aRval)
 
 Complex&Complex::operator-=(const double&aRval)
 {
- Re -= aRval;
-  return *this;
+    Re -= aRval;
+    return *this;
 }
 Complex&Complex   ::operator  *=  ( const  double  &  aRval)
 {
@@ -179,7 +180,7 @@ Complex operator* (const double& aLval, const Complex& a)
     r.Im =aLval *a.Im;
     return r;
 }
-int main()//Функция main добавлена для компиляции без ошибки
+int main()//Funkciya Main() dobavlena dlya kompilyacii
 {
 return 0;
 }
