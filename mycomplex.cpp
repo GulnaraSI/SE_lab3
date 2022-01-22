@@ -187,12 +187,12 @@ Complex operator - (const double & aLval , const Complex & aRval)       //Vozvra
     return Result;                                                      //Rezultat
 }
 
-Complex operator* (const double& aLval, const Complex& a)
+Complex operator * (const double & aLval , const Complex & a)           //Vozvraschaet rezultat umnozheniya deystvitelnogo i komplesnogo chisla
 {
     Complex r;
-    r.Re =aLval* a.Re;
-    r.Im =aLval *a.Im;
-    return r;
+    r.Re = aLval * a.Re;
+    r.Im = aLval * a.Im;
+    return r;                                                           //Rezultat
 }
 
 int main()//Funkciya Main() dobavlena dlya kompilyacii
