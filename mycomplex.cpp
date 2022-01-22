@@ -11,13 +11,13 @@ Complex :: Complex (double aRe , double aIm)    //Konstruktor klassa
     Im = aIm;                                   //aIm - mnimaya chact'
 }
 
-Complex :: Complex (const Complex& aRval)       //Konstruktor klassa
+Complex :: Complex (const Complex & aRval)       //Konstruktor klassa
 {
     Re = aRval.Re;                              //aRval - kompleksnoe chislo , aRval.Re - deystvitelnaya chact'
     Im = aRval.Im;                              //aRval - kompleksnoe chislo , aRval.Im - mnimaya chact'
 }
 
-Complex :: ~Complex()                             //Destruktor klassa
+Complex :: ~Complex ()                          //Destruktor klassa
 {
     Re = 0.0;
     Im = 0.0;
@@ -29,9 +29,9 @@ void Complex :: Set (double aRe , double aIm)           //Ustanovka deystvitelno
     Im = aIm;
 }
 
-Complex :: operator double()                            //Vozvraschaet modul' kompleksnogo chisla
+Complex :: operator double ()                           //Vozvraschaet modul' kompleksnogo chisla
 {
-    return abs();                                       //Modul' koplesnogo chisla
+    return abs ();                                      //Modul' koplesnogo chisla
 }
 
 double Complex :: abs ()                                //Vozvraschaet modul' vyrazheniya kompleksnogo chisla
