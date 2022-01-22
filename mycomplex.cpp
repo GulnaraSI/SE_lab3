@@ -44,15 +44,15 @@ Complex Complex ::  operator+ (const Complex & aRval )      //Vozvraschaet rezul
     Complex Result;
     Result.Re=Re+ aRval. Re;
     Result.Im =Im + aRval.Im ;
-    return Result;                                          //Rezultat slozheniya kompleksnogo chisla
+    return Result;                                          //Rezultat
 }
 
-  Complex   Complex  ::   operator- ( const Complex & aRval)
+  Complex   Complex  ::   operator- ( const Complex & aRval)        //Vozvraschaet rezultat vychitaniya kompleksnogo chisla
 {
     Complex Result;
     Result.Re = Re-aRval.Re;
     Result.Im=   Im-aRval.Im;
-    return Result;
+    return Result;                                                  //Rezultat
 }
 
 Complex Complex ::operator+ (const double& aval)
