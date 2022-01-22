@@ -127,11 +127,11 @@ Complex & Complex :: operator -= (const double & aRval)         //Ssylaetcya na 
     return * this;                                              //Vozvrat po znacheniu
 }
 
-Complex&Complex   ::operator  *=  ( const  double  &  aRval)
+Complex & Complex :: operator *= (const double & aRval)         //Ssylaetcya na rezultat umnozheniya deystvitelnogo chisla
 {
     Re *= aRval;
     Im *= aRval;
-    return *this;
+    return * this;                                              //Vozvrat po znacheniu
 }
 
 Complex & Complex :: operator/=(const double&aRval)
