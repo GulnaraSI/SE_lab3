@@ -115,10 +115,10 @@ Complex & Complex :: operator *= (const Complex & aRval)        //Ssylaetcya na 
     return * this;                                              //Vozvrat po znacheniu
 }
 
-Complex& Complex::operator+= (const double& aRval)
+Complex & Complex :: operator += (const double & aRval)         //Ssylaetcya na rezultat slozheniya deystvitelnogo chisla
 {
-    Re+=aRval;
-    return*this;
+    Re += aRval;
+    return * this;                                              //Vozvrat po znacheniu
 }
 
 Complex&Complex::operator-=(const double&aRval)
