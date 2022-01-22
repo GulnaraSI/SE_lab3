@@ -78,12 +78,12 @@ Complex Complex :: operator * (const Complex & aRval)           //Vozvraschaet r
     return Result;                                              //Rezultat
 }
 
-Complex Complex::operator* (const double& aRval)
+Complex Complex :: operator * (const double & aRval)            //Vozvraschaet rezultat umnozheniya deystvitelnogo chisla
 {
     Complex Result;
-    Result.Re =Re*aRval;
-    Result.Im =Im*aRval;
-    return Result;
+    Result.Re = Re * aRval;
+    Result.Im = Im * aRval;
+    return Result;                                              //Rezultat
 }
 Complex Complex::operator/ (const double& aRval)
 {
