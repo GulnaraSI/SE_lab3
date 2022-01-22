@@ -34,9 +34,9 @@ Complex::operator double()                          //Vozvraschaet modul' komple
     return abs();                                   //Modul' koplesnogo chisla
 }
 
-double Complex::abs()
+double Complex::abs()                               //Vozvraschaet modul' vyrazheniya kompleksnogo chisla
 {
-return sqrt(Re*Re+Im*Im);
+return sqrt(Re*Re+Im*Im);                           //Modul' vyrazheniya koplesnogo chisla
 }
 
 Complex Complex ::  operator+ (const Complex & aRval )
