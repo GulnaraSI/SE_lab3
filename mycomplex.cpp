@@ -39,12 +39,12 @@ double Complex::abs()                               //Vozvraschaet modul' vyrazh
 return sqrt(Re*Re+Im*Im);                           //Modul' vyrazheniya koplesnogo chisla
 }
 
-Complex Complex ::  operator+ (const Complex & aRval )
+Complex Complex ::  operator+ (const Complex & aRval )      //Vozvraschaet rezultat slozheniya kompleksnogo chisla
 {
     Complex Result;
     Result.Re=Re+ aRval. Re;
     Result.Im =Im + aRval.Im ;
-    return Result;
+    return Result;                                          //Rezultat slozheniya kompleksnogo chisla
 }
 
   Complex   Complex  ::   operator- ( const Complex & aRval)
