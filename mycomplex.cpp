@@ -179,12 +179,12 @@ Complex operator + (const double & aLval , const Complex & aRval)       //Vozvra
     return Result;                                                      //Rezultat
 }
 
-Complex operator-(const double &aLval, const Complex&aRval)
+Complex operator - (const double & aLval , const Complex & aRval)       //Vozvraschaet rezultat vychitaniya deystvitelnogo i komplesnogo chisla
 {
     Complex Result;
     Result.Re = aLval - aRval.Re;
-    Result.Im = -aRval.Im;
-    return Result;
+    Result.Im =- aRval.Im;
+    return Result;                                                      //Rezultat
 }
 
 Complex operator* (const double& aLval, const Complex& a)
