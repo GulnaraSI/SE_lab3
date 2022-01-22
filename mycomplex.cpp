@@ -23,7 +23,7 @@ Complex::~Complex()                             //Destruktor klassa
     Im= 0.0;
 }
 
-void     Complex::  Set(  double aRe,double aIm)
+void     Complex::  Set(  double aRe,double aIm)    //Ustanovka deystvitelnoy i mnimoy chacti
 {
     Re = aRe;
     Im = aIm;
