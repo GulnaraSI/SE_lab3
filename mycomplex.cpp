@@ -5,62 +5,62 @@
 
 using namespace std;
 
-Complex ::Complex(double aRe  , double   aIm)   //Konstruktor klassa
+Complex :: Complex (double aRe , double aIm)    //Konstruktor klassa
 {
     Re = aRe;                                   //aRe - deystvitelnaya chact'
     Im = aIm;                                   //aIm - mnimaya chact'
 }
 
-Complex ::  Complex(const Complex& aRval)       //Konstruktor klassa
+Complex :: Complex (const Complex& aRval)       //Konstruktor klassa
 {
     Re = aRval.Re;                              //aRval - kompleksnoe chislo , aRval.Re - deystvitelnaya chact'
     Im = aRval.Im;                              //aRval - kompleksnoe chislo , aRval.Im - mnimaya chact'
 }
 
-Complex::~Complex()                             //Destruktor klassa
+Complex :: ~Complex()                             //Destruktor klassa
 {
     Re = 0.0;
     Im = 0.0;
 }
 
-void     Complex::  Set(  double aRe,double aIm)    //Ustanovka deystvitelnoy i mnimoy chacti
+void     Complex :: Set (double aRe , double aIm)    //Ustanovka deystvitelnoy i mnimoy chacti
 {
     Re = aRe;
     Im = aIm;
 }
 
-Complex::operator double()                          //Vozvraschaet modul' kompleksnogo chisla
+Complex :: operator double()                            //Vozvraschaet modul' kompleksnogo chisla
 {
-    return abs();                                   //Modul' koplesnogo chisla
+    return abs();                                       //Modul' koplesnogo chisla
 }
 
-double Complex::abs()                               //Vozvraschaet modul' vyrazheniya kompleksnogo chisla
+double Complex :: abs ()                                //Vozvraschaet modul' vyrazheniya kompleksnogo chisla
 {
-return sqrt(Re*Re+Im*Im);                           //Modul' vyrazheniya koplesnogo chisla
+return sqrt(Re * Re + Im * Im);                         //Modul' vyrazheniya koplesnogo chisla
 }
 
-Complex Complex ::  operator+ (const Complex & aRval )      //Vozvraschaet rezultat slozheniya kompleksnogo chisla
+Complex Complex :: operator + (const Complex & aRval)       //Vozvraschaet rezultat slozheniya kompleksnogo chisla
 {
     Complex Result;
-    Result.Re=Re+ aRval. Re;
-    Result.Im =Im + aRval.Im ;
+    Result.Re = Re + aRval. Re;
+    Result.Im = Im + aRval.Im;
     return Result;                                          //Rezultat
 }
 
-  Complex   Complex  ::   operator- ( const Complex & aRval)        //Vozvraschaet rezultat vychitaniya kompleksnogo chisla
+Complex Complex :: operator - (const Complex & aRval)            //Vozvraschaet rezultat vychitaniya kompleksnogo chisla
 {
     Complex Result;
     Result.Re = Re-aRval.Re;
-    Result.Im=   Im-aRval.Im;
-    return Result;                                                  //Rezultat
+    Result.Im = Im-aRval.Im;
+    return Result;                                              //Rezultat
 }
 
-Complex Complex ::operator+ (const double& aval)
+Complex Complex :: operator + (const double & aval)             //Vozvraschaet rezultat slozheniya deystvitelnogo chisla
 {
     Complex result;
-    result.Re= Re +aval;
+    result.Re = Re + aval;
     result.Im = Im;
-    return result;
+    return result;                                              //Rezultat
 }
 
 Complex Complex:: operator- (const  double& aRval)
