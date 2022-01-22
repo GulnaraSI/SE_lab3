@@ -23,7 +23,7 @@ Complex :: ~Complex()                             //Destruktor klassa
     Im = 0.0;
 }
 
-void     Complex :: Set (double aRe , double aIm)    //Ustanovka deystvitelnoy i mnimoy chacti
+void Complex :: Set (double aRe , double aIm)           //Ustanovka deystvitelnoy i mnimoy chacti
 {
     Re = aRe;
     Im = aIm;
@@ -85,12 +85,12 @@ Complex Complex :: operator * (const double & aRval)            //Vozvraschaet r
     Result.Im = Im * aRval;
     return Result;                                              //Rezultat
 }
-Complex Complex::operator/ (const double& aRval)
+Complex Complex :: operator / (const double & aRval)            //Vozvraschaet rezultat deleniya deystvitelnogo chisla
 {
     Complex Result;
-    Result.Re = Re/aRval;
-    Result.Im = Im/aRval;
-    return Result;
+    Result.Re = Re / aRval;
+    Result.Im = Im / aRval;
+    return Result;                                              //Rezultat
 }
 
 Complex &Complex :: operator+=  ( const   Complex&  arval)
