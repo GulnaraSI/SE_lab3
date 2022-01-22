@@ -1,3 +1,5 @@
+/*Fail s zagolovochnym failom klassa Complex*/
+
 #ifndef _MY_COMPLEX_H_
 #define _MY_COMPLEX_H_
 #include <iostream>
@@ -10,9 +12,10 @@ Complex(double aRe=0, double aIm=0);
 Complex(const Complex&);
 ~Complex(    );
 void Set(double aRe, double aIm=0);
+
 operator double();
- double abs();
- friend istream& operator>>(   istream&,Complex&) ; 
+double abs();
+friend istream& operator>>(   istream&,Complex&) ; 
 
 
 
