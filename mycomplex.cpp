@@ -93,18 +93,18 @@ Complex Complex :: operator / (const double & aRval)            //Vozvraschaet r
     return Result;                                              //Rezultat
 }
 
-Complex & Complex :: operator +=  (const Complex & arval)       //Ssylaetcya na rezultat slozheniya kompleksnogo chisla
+Complex & Complex :: operator += (const Complex & arval)        //Ssylaetcya na rezultat slozheniya kompleksnogo chisla
 {
     Re += arval.Re;
     Im += arval.Im;
     return * this;                                              //Vozvrat po znacheniu
 }
 
-Complex & Complex::operator-= (const Complex& aRval)
+Complex & Complex :: operator -= (const Complex & aRval)        //Ssylaetcya na rezultat vychitaniya kompleksnogo chisla
 {
-    Re-=aRval.Re;
-    Im-= aRval.Im;
-    return * this;
+    Re -= aRval.Re;
+    Im -= aRval.Im;
+    return * this;                                              //Vozvrat po znacheniu
 }
 
 Complex&Complex::operator*=(const Complex&aRval)
