@@ -12,11 +12,11 @@ double Re;     						//Deistvitelnaya chast'
 double Im; 						//mnimaya chast'
 public:							//Spisok chlenov klassov
 	Complex(double aRe = 0, double aIm = 0);		//Konstruktor mnimoy i deystvitelnaoi chacti
-	Complex(const Complex&);			//Konstruktor kompleksnogo chisla
-~Complex(    );						//Destruktor
+	Complex(const Complex &);			//Konstruktor kompleksnogo chisla
+~Complex ();						//Destruktor
 void Set(double aRe, double aIm = 0);			//Ustanovka deystvitelnoy i mnimoy chacti
-operator double();					//Vozvraschaet modul' kompleksnogo chisla
-double abs();						//Modul' koplesnogo chisla
+operator double ();					//Vozvraschaet modul' kompleksnogo chisla
+double abs ();						//Modul' koplesnogo chisla
 friend istream& operator >> (istream & , Complex &) ; 	// Druzhestvennyi metod operacii perezagruzki vvoda
 friend ostream& operator << (ostream & , Complex & );	// Druzhestvennyi metod operacii perezagruzki vyvoda
 Complex operator + (const Complex &);			//Operaciya slozheniya mnimoy chasti
