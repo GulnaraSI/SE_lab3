@@ -1,4 +1,7 @@
-/*Fail s zagolovochnym failom klassa Complex*/
+/*
+    @file
+    @brief Заголовочный файл класса Complex
+*/
 
 #ifndef _MY_COMPLEX_H_
 #define _MY_COMPLEX_H_
@@ -6,37 +9,94 @@
 
 using namespace std;
 
-class Complex  						//Klass kompleksnogo chisla
+/*!
+   @brief Класса комплексного числа
+*/
+class Complex
 {
-double Re;     						//Deistvitelnaya chast'
-double Im; 						//mnimaya chast'
-public:							//Spisok chlenov klassov
-	Complex(double aRe = 0, double aIm = 0);		//Konstruktor mnimoy i deystvitelnaoi chacti
-	Complex(const Complex &);			//Konstruktor kompleksnogo chisla
-~Complex ();						//Destruktor
-void Set(double aRe, double aIm = 0);			//Ustanovka deystvitelnoy i mnimoy chacti
-operator double ();					//Vozvraschaet modul' kompleksnogo chisla
-double abs ();						//Modul' koplesnogo chisla
-friend istream& operator >> (istream & , Complex &) ; 	// Druzhestvennyi metod operacii perezagruzki vvoda
-friend ostream& operator << (ostream & , Complex & );	// Druzhestvennyi metod operacii perezagruzki vyvoda
-Complex operator + (const Complex &);			//Operaciya slozheniya mnimoy chasti
-Complex operator - (const Complex &);			//Operaciya vychitaniya mnimoy chasti
-Complex operator + (const double &);			//Operaciya slozheniya deystvitelnogo chasti
-Complex operator - (const double &);			//Operaciya vychitaniya deystvitelnogo chasti
-Complex operator * (const Complex &);			//Operaciya umnozheniya mnimoy chasti
-Complex operator * (const double &);			//Operaciya umnozheniya deystvitelnogo chasti
-Complex operator / (const double &);			//Operaciya deleniya deystvitelnogo chasti
-friend Complex operator + (const double & , const Complex &);		//Druzhestvennyi metod operacii slozheniya
-friend Complex operator - (const double & , const Complex &);		//Druzhestvennyi metod operacii vychitaniya
-friend Complex operator * (const double & , const Complex &);		//Druzhestvennyi metod operacii umnozheniya
-Complex & operator += (const Complex &);				//Perezagruzka operaciya slozheniya kopleksnogo chisla
-Complex & operator -= (const Complex &);				//Perezagruzka operaciya vychitaniya kopleksnogo chisla
-Complex & operator *= (const Complex &); 				//Perezagruzka operaciya umnozheniya kopleksnogo chisla
-Complex & operator += (const double &);					//Perezagruzka operaciya slozheniya deystvitelnogo chisla
-Complex & operator -= (const double &);					//Perezagruzka operaciya vychitaniya deystvitelnogo chisla
-Complex & operator *= (const double &);					//Perezagruzka operaciya umnozheniya deystvitelnogo chisla
-Complex & operator /= (const double &);					//Perezagruzka operaciya deleniya deystvitelnogo chisla
-Complex & operator = (const Complex &);					//Perezagruzka operaciya ravenstva kopleksnogo chisla
-Complex & operator = (const double &);					//Perezagruzka operaciya ravenstva deystvitelnogo chisla
+/*!
+        @brief Действительная состовляющая
+*/
+double Re;
+/*!
+        @brief Мнимая состовляющая
+*/
+double Im;
+
+/*!
+        @brief  список членов класса
+*/
+public:
+
+    /*!
+            @brief  Конструктор мнимой и действительной части
+    */
+	Complex(double aRe = 0, double aIm = 0);
+
+	/*!
+            @brief  Конструктор комплексного числа
+    */
+	Complex(const Complex &);
+/*!
+            @brief  Деструктор
+*/
+
+~Complex ();
+
+/*!
+            @brief  Установка мнимой и действительной состовляющих
+*/
+void Set(double aRe, double aIm = 0);
+operator double ();
+
+/*!
+            @brief  Модуль комплексного числа
+*/
+double abs ();
+
+/*!
+            @brief  Дружественный метод операции перезагрузки ввода/вывода
+*/
+friend istream& operator >> (istream & , Complex &) ;
+friend ostream& operator << (ostream & , Complex & );
+
+/*!
+            @brief  Операции для мнимой и действительной части
+*/
+Complex operator + (const Complex &);
+Complex operator - (const Complex &);
+Complex operator + (const double &);
+Complex operator - (const double &);
+Complex operator * (const Complex &);
+Complex operator * (const double &);
+Complex operator / (const double &);
+
+/*!
+            @brief  Дружественный метод операции сложения
+*/
+friend Complex operator + (const double & , const Complex &);
+
+/*!
+            @brief  Дружественный метод операции вычитания
+*/
+friend Complex operator - (const double & , const Complex &);
+
+/*!
+            @brief  Дружественный метод операции умножения
+*/
+friend Complex operator * (const double & , const Complex &);
+
+/*!
+            @brief  Перезагрузка операций для действительного и комплексного числа
+*/
+Complex & operator += (const Complex &);
+Complex & operator -= (const Complex &);
+Complex & operator *= (const Complex &);
+Complex & operator += (const double &);
+Complex & operator -= (const double &);
+Complex & operator *= (const double &);
+Complex & operator /= (const double &);
+Complex & operator = (const Complex &);
+Complex & operator = (const double &);
 };
 #endif
